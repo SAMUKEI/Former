@@ -37,6 +37,9 @@
 		2AC381571BA447D3009C7EFF /* UIColor+FormerDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC381481BA447D3009C7EFF /* UIColor+FormerDemo.swift */; };
 		2AC3815A1BA447D3009C7EFF /* FormerInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC3814D1BA447D3009C7EFF /* FormerInputAccessoryView.swift */; };
 		2AC3815C1BA4498D009C7EFF /* TextSelectorViewContorller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC3815B1BA4498D009C7EFF /* TextSelectorViewContorller.swift */; };
+		BF74949D1DA7F07700C1DC75 /* DoubleFormPickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7494991DA7F07700C1DC75 /* DoubleFormPickerCell.swift */; };
+		BF74949E1DA7F07700C1DC75 /* DoubleInlinePickerRowFormer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF74949A1DA7F07700C1DC75 /* DoubleInlinePickerRowFormer.swift */; };
+		BF74949F1DA7F07700C1DC75 /* DoublePickerRowFormer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF74949B1DA7F07700C1DC75 /* DoublePickerRowFormer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +105,9 @@
 		2AC381491BA447D3009C7EFF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2AC3814D1BA447D3009C7EFF /* FormerInputAccessoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormerInputAccessoryView.swift; sourceTree = "<group>"; };
 		2AC3815B1BA4498D009C7EFF /* TextSelectorViewContorller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextSelectorViewContorller.swift; sourceTree = "<group>"; };
+		BF7494991DA7F07700C1DC75 /* DoubleFormPickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleFormPickerCell.swift; sourceTree = "<group>"; };
+		BF74949A1DA7F07700C1DC75 /* DoubleInlinePickerRowFormer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleInlinePickerRowFormer.swift; sourceTree = "<group>"; };
+		BF74949B1DA7F07700C1DC75 /* DoublePickerRowFormer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoublePickerRowFormer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +166,7 @@
 		2AC3813A1BA447D3009C7EFF /* Former-Demo */ = {
 			isa = PBXGroup;
 			children = (
+				BF7494971DA7EFF200C1DC75 /* Util */,
 				2ABE8A5B1BE4B80800F9EB85 /* Commons */,
 				2AC381411BA447D3009C7EFF /* Controllers */,
 				2AC3813F1BA447D3009C7EFF /* Cells */,
@@ -217,6 +224,16 @@
 				2AC3814D1BA447D3009C7EFF /* FormerInputAccessoryView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		BF7494971DA7EFF200C1DC75 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				BF7494991DA7F07700C1DC75 /* DoubleFormPickerCell.swift */,
+				BF74949A1DA7F07700C1DC75 /* DoubleInlinePickerRowFormer.swift */,
+				BF74949B1DA7F07700C1DC75 /* DoublePickerRowFormer.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,9 +338,11 @@
 				2A5325151BE4A55D00E4A3F2 /* ProfileFieldCell.swift in Sources */,
 				2A5325101BE4935700E4A3F2 /* ProfileImageCell.swift in Sources */,
 				2AA777B71BEE88BD00900B01 /* CenterLabelCell.swift in Sources */,
+				BF74949F1DA7F07700C1DC75 /* DoublePickerRowFormer.swift in Sources */,
 				2AC381551BA447D3009C7EFF /* TopViewController.swift in Sources */,
 				2AC381571BA447D3009C7EFF /* UIColor+FormerDemo.swift in Sources */,
 				2AC381541BA447D3009C7EFF /* DefaultsViewController.swift in Sources */,
+				BF74949E1DA7F07700C1DC75 /* DoubleInlinePickerRowFormer.swift in Sources */,
 				2AC3815A1BA447D3009C7EFF /* FormerInputAccessoryView.swift in Sources */,
 				2AC381561BA447D3009C7EFF /* String+FormerDemo.swift in Sources */,
 				2AC381531BA447D3009C7EFF /* ExampleViewController.swift in Sources */,
@@ -332,6 +351,7 @@
 				2AA777A51BECED6200900B01 /* AddEventViewController.swift in Sources */,
 				2AA777B51BEE86B000900B01 /* Login.swift in Sources */,
 				2A53250E1BE48C3F00E4A3F2 /* EditProfileViewController.swift in Sources */,
+				BF74949D1DA7F07700C1DC75 /* DoubleFormPickerCell.swift in Sources */,
 				2ABE8A5D1BE4B81900F9EB85 /* Profile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
