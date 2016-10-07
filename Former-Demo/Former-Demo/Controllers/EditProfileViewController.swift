@@ -91,19 +91,20 @@ final class EditProfileViewController: FormViewController {
             }.onTextChanged {
                 Profile.sharedInstance.name = $0
         }
-        let genderRow = InlinePickerRowFormer<ProfileLabelCell, String>(instantiateType: .Nib(nibName: "ProfileLabelCell")) {
+        // *************************************** //
+        let genderRow = DoubleInlinePickerRowFormer<ProfileLabelCell, String>(instantiateType: .Nib(nibName: "ProfileLabelCell")) {
             $0.titleLabel.text = "Gender"
             }.configure {
-                let genders = ["Male", "Female"]
-                $0.pickerItems = genders.map {
-                    InlinePickerItem(title: $0)
-                }
-                if let gender = Profile.sharedInstance.gender {
-                    $0.selectedRow = genders.index(of: gender) ?? 0
-                }
-            }.onValueChanged {
-                Profile.sharedInstance.gender = $0.title
+                let genders1 = ["Male1", "Female1"]
+                let genders2 = ["Male2", "Female2", "None2"]
+                $0.pickerItems = [
+                    genders1.map { InlinePickerItem(title: $0) },
+                    genders2.map { InlinePickerItem(title: $0) }
+                ]
+            }.onValueChanged { title, component in
+                print("\(title.title), \(component)")
         }
+        // *************************************** //
         let birthdayRow = InlineDatePickerRowFormer<ProfileLabelCell>(instantiateType: .Nib(nibName: "ProfileLabelCell")) {
             $0.titleLabel.text = "Birthday"
             }.configure {

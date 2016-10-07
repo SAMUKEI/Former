@@ -9,15 +9,17 @@
 import UIKit
 import Former
 
-final class ProfileLabelCell: UITableViewCell, InlineDatePickerFormableRow, InlinePickerFormableRow {
+final class ProfileLabelCell: UITableViewCell, InlineDatePickerFormableRow, DoubleInlinePickerFormableRow {
     
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var displayLabel: UILabel!
+    @IBOutlet weak var displayLeftLabel: UILabel!
+    @IBOutlet weak var displayRightLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         titleLabel.textColor = .formerColor()
-        displayLabel.textColor = .formerSubColor()
+        displayLeftLabel.textColor = .formerSubColor()
+        displayRightLabel.textColor = .formerSubColor()
     }
     
     func formTitleLabel() -> UILabel? {
@@ -25,8 +27,12 @@ final class ProfileLabelCell: UITableViewCell, InlineDatePickerFormableRow, Inli
     }
     
     func formDisplayLabel() -> UILabel? {
-        return displayLabel
+        return displayLeftLabel
     }
-    
+
+    func formDisplayLabels() -> [UILabel]? {
+        return [displayLeftLabel, displayRightLabel]
+    }
+
     func updateWithRowFormer(_ rowFormer: RowFormer) {}
 }

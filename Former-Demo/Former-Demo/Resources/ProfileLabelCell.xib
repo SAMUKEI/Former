@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -11,28 +12,31 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="o0r-ec-JOl" id="PDn-Nk-GCp">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <frame key="frameInset" width="320" height="43.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="naM-Xr-r38">
-                        <rect key="frame" x="15" y="0.0" width="75" height="43.5"/>
-                        <animations/>
                         <constraints>
                             <constraint firstAttribute="width" constant="75" id="wAK-iH-XDx"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WbB-r5-lRb">
-                        <rect key="frame" x="100" y="0.0" width="205" height="43.5"/>
-                        <animations/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WbB-r5-lRb">
+                        <frame key="frameInset" minX="100" width="62" height="44"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="twt-Qj-AxJ">
+                        <frame key="frameInset" minX="227" width="62" height="44"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
-                <animations/>
                 <constraints>
                     <constraint firstItem="WbB-r5-lRb" firstAttribute="top" secondItem="PDn-Nk-GCp" secondAttribute="top" id="2zv-qr-Nwy"/>
                     <constraint firstAttribute="bottom" secondItem="naM-Xr-r38" secondAttribute="bottom" id="DvC-hv-pqX"/>
@@ -43,9 +47,9 @@
                     <constraint firstItem="naM-Xr-r38" firstAttribute="top" secondItem="PDn-Nk-GCp" secondAttribute="top" id="slB-pr-cqr"/>
                 </constraints>
             </tableViewCellContentView>
-            <animations/>
             <connections>
-                <outlet property="displayLabel" destination="WbB-r5-lRb" id="JF1-cq-Qbf"/>
+                <outlet property="displayLeftLabel" destination="WbB-r5-lRb" id="yFK-zf-z55"/>
+                <outlet property="displayRightLabel" destination="twt-Qj-AxJ" id="GAh-5t-ZlQ"/>
                 <outlet property="titleLabel" destination="naM-Xr-r38" id="DTF-uf-LZw"/>
             </connections>
             <point key="canvasLocation" x="228" y="244"/>
